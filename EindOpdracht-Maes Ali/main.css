@@ -1,0 +1,208 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /*--- navigation bar ---*/
+  
+  .navbar {
+    text-align: center;
+    padding-left: 10%;
+      
+}
+ .nav-link,
+  .navbar-brand {
+    color: black;
+    cursor: pointer;
+    text-align: center; 
+  }
+.nav-link {
+    margin-right: 1em !important;   
+  }
+  /*when clicked on link underline and color for underline*/
+  .nav-link:hover {
+    text-decoration: underline #6495ED;
+    background-color: gainsboro;
+    color: black;
+    transition: 0.9s;
+        
+  }
+  .nav-link:active{
+      background-color: #6495ED;
+  }
+  /* When colpase the links are centered*/
+  .navbar-collapse {
+    justify-content: center;
+  }
+  /* Header googlefonts*/
+  .header{
+    background-image: url(images/pgHeader.png);
+    padding-top: 20%;
+    height: 40em;
+    background-size: auto;
+    background-position: initial;
+    position: relative;
+    
+  }
+ 
+  .info{
+    left: 50%;     
+    padding-bottom: 10%;
+    position: absolute; /*if u pust absolute the cards becomes ontop of everything not ok!*/
+    top: 50%;
+    transform: translate(-50%,-50%); /*centers the div*/
+    text-align: center;
+    
+    
+  }
+  .info p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+  }
+  .info h1{
+    font-family: 'Lobster', cursive;
+    color: white;
+  }
+  /*button in the header*/
+  .info button{
+    border-radius: 20px;
+    color: white;
+  }
+  .info button:hover{
+    text-decoration: underline  #6495ED;
+    background-color: white;
+    color: black;
+    transition: 1.5s;
+    
+  }
+   
+/*img of the card height should be same*/
+.card{
+  border-top-right-radius: 15%; /*cards radius top*/
+  
+}
+.card img{
+  height: 10em;
+  width: auto;
+  border-top-right-radius: 15%; /*cards radius top*/
+  
+}
+/*img hover*/
+.card img:hover{
+  filter: blur();
+  transform: scale(1.2);
+  transition: 0.9s;
+}
+/*changing the color of button*/
+.card .btn{
+background-color:  white;
+color: black;
+border-radius: 20px;
+}
+
+.card .btn:hover{
+   text-decoration: underline #6495ED;
+    background-color: gainsboro;
+    color: black;
+    transition: 0.9s;
+}
+  /*line under the cards*/
+.line{
+  border: 3px solid white;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-bottom: 30px;
+  
+}
+
+/*BLOG NIEUW ZEELAND*/
+ /* Container holding the image and the text */
+
+.container {
+  position: relative;
+  max-width: 1000px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+  padding-bottom: 30px;
+ 
+}
+
+
+.container .content {
+  position: sticky; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgba(22, 75, 173,0.5);
+  color: rgb(255, 255, 255); 
+  width: 100%; /* Full width */
+  padding: 10px; /* Some padding */ 
+  border-top-right-radius: 40px; /*cards radius top*/
+  
+}
+.container img {
+  border-top-right-radius: 40px; /*cards radius top*/
+}
+.content .btn{
+  background-color:  white;
+  color: black;
+  border-radius: 20px;
+}
+.content .btn:hover{
+  text-decoration: underline #6495ED;
+   background-color: gainsboro;
+   color: black;
+   transition: 0.9s;
+}
+
+
+
+
+
+
+
+/*page footer */
+.page-footer {
+  border-top: 2px solid #6495ED;
+  border-width: 60px;
+  background-color: #fff;
+  color: rgb(90, 84, 84);
+  padding: 60px 0 30px;
+}
+
+.footer-copyright {
+  color: #666;
+  padding: 40px 0;
+}
+
+@media (max-width: 575.98px) {
+
+  .description {
+    left: 0;
+    padding: 0 15px;
+    position: absolute;
+    top: 10%;
+    transform: none;
+    text-align: center;
+  }
+  
+  .description h1 {
+    font-size: 2em;
+  }
+  
+  .description p {
+    font-size: 1.2rem;
+  }
+  
+  .features {
+    margin: 0;
+  }
+
+}
+ 
+  
+
+
+
+ 
+

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Reizen? helpen wij je!</title>
+  <!-- Loading bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!--Google fonts link-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nerko+One&display=swap" rel="stylesheet">
+  <!--Bootstrap stylesheet-->
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+</head>
+
+<body>
+
+  <!--Navigation bar of the page-->
+  <div class="Top">
+    <nav class="navbar navbar-expand-md">
+      <div class="logo-image"> <img src="images/logo.png" alt=""></div>
+      <!--To Change the hamburger icon u must use light instead of dark-->
+      <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#main-navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main-navigation">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="onzereizen.html">Onze Reizen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fotogalarij.html">FotoGallerij</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reistips.html">Reistips</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!--Making form-->
+  <div class="container my-5 py-5 z-depth-1">
+
+
+    <!--Section: Content-->
+    <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+
+      <style>
+        .map-container {
+          height: 200px;
+          position: relative;
+        }
+
+        .map-container iframe {
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+        }
+      </style>
+
+      <!--Google map-->
+      <div id="map-container-google-1" class="z-depth-1 map-container mb-5">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1491.6044267168156!2d3.
+        714029779182425!3d51.042568976946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3715dd9090cfb%3A0xc75976f79e073de!
+        2sHOGENT%20campus%20Mercator!5e0!3m2!1sen!2sbe!4v1607155272093!5m2!1sen!2sbe" width="600" height="450" frameborder="0" style="border:0;
+        " allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <!--Google Maps-->
+
+      <!--Grid row-->
+      <div class="row">
+
+        <!--Grid column-->
+        <div class="col-lg-5 col-md-12 mb-0 mb-md-0">
+
+          <h3 class="font-weight-bold">Contact Ons</h3>
+
+          <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente
+            molestiae
+            numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam, doloremque laborum.</p>
+
+          <p><span class="font-weight-bold mr-2">Email:</span><a href="">ali.maes@student.hogent.be</a></p>
+          <p><span class="font-weight-bold mr-2">Telefoon:</span><a href="">+ 01 234 567 88</a></p>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-7 col-md-12 mb-4 mb-md-0">
+
+          <!--Grid row-->
+          <div class="row">
+
+            <!--Grid column-->
+            <div class="col-md-6">
+
+              <!-- Material outline input -->
+              <div class="md-form md-outline mb-0">
+                <input type="text" id="form-first-name" class="form-control">
+                <label for="form-first-name">Naam</label>
+              </div>
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-6">
+
+              <!-- Material outline input -->
+              <div class="md-form md-outline mb-0">
+                <input type="text" id="form-last-name" class="form-control">
+                <label for="form-last-name">Voornaam</label>
+              </div>
+
+            </div>
+            <!--Grid column-->
+
+          </div>
+          <!--Male of Female-->
+          <div class="col-12 col-md-6 form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="exampleRadios1" name="mailing" value="inschrijven"
+              checked=""><label class="form-check-label" for="exampleRadios1">Man</label>
+            <input type="radio" class="form-check-input" id="exampleRadios2" name="mailing" value="uitschrijven"><label
+              class="form-check-label" for="exampleRadios2">Vrouw</label>
+          </div>
+
+
+
+
+
+
+          <!-- Material outline input -->
+          <div class="md-form md-outline mt-3">
+            <input type="email" id="form-email" class="form-control">
+            <label for="form-email">E-mail</label>
+          </div>
+
+            <!--Dropdown Input-->
+          <div class="md-form md-outline">
+            <select name="land" id="">
+              <option value="BE">Belgie</option>
+              <option value="BE">Frankrijk</option>
+              <option value="BE">Nederland</option>
+              <option value="BE">Duitsland</option>
+            </select>
+            <label for="land">Land</label>
+
+          </div>
+          <!-- Material outline input -->
+          <div class="md-form md-outline">
+            <input type="text" id="form-subject" class="form-control">
+            <label for="form-subject">Subject</label>
+          </div>
+
+          <!--Material textarea-->
+          <div class="md-form md-outline mb-3">
+            <textarea id="form-message" class="md-textarea form-control" rows="3"></textarea>
+            <label for="form-message">Hoe kan ik u helpen?</label>
+          </div>
+
+          <a href="#" class="btn btn-primary">Submit</a>
+
+        </div>
+        <!--Grid column-->
+        
+      </div>
+      <!--Grid row-->
+
+
+    </section>
+    <!--Section: Content-->
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-12">
+          <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante
+            luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante
+            luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <h6 class="text-uppercase font-weight-bold">Contact</h6>
+          <p>Gent straat 2351, Oost-vlanderen,Gent
+            <br />ali.maes@student.hogent.be
+            <br />+ 01 234 567 88
+            <br />+ 01 234 567 89</p>
+        </div>
+      </div>
+      <div class="footer-copyright text-center">© 2020 Copyright: HelloWorld.com</div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Loading JQuery-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <!-- Loading javascript-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
